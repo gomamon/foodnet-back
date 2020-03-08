@@ -1,7 +1,7 @@
 # Created by https://www.gitignore.io/api/java,gradle,maven,eclipse,intellij
 # Edit at https://www.gitignore.io/?templates=java,gradle,maven,eclipse,intellij
 
-config/
+./config/
 
 ### Eclipse ###
 .metadata

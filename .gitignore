@@ -2,7 +2,7 @@
 # Edit at https://www.gitignore.io/?templates=java,gradle,maven,eclipse,intellij
 
 ./config/
-*.properties
+.properties
 
 ### Eclipse ###
 .metadata

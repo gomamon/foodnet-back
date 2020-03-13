@@ -14,8 +14,15 @@ public class PostServiceImpl implements PostService {
     private PostDao dao;
 
     @Override
-    public PostModel printPost() {
-        PostModel post = dao.getPost();
-        return post;
+    public void addPost(PostModel model) throws Exception{
+        dao.addPost(model);
     }
+
+    @Override
+    public PostModel printPost() {
+        PostModel model = dao.getPost();
+        return model;
+    }
+
+
 }

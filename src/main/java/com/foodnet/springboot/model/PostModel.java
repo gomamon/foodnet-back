@@ -4,42 +4,41 @@ import java.util.Date;
 
 public class PostModel {
 
-
-    private int id;
-    private String subject;
+    private String id;
+    private String title;
     private String content;
-    private Date reg_date;
+    private Date regi_time;
 
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setContent(String content) {
         this.content = content;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getTitle() {
+        return title;
     }
 
     public String getContent() {
         return content;
     }
 
-    public Date getReg_date() {
-        return reg_date;
+    public Date getRegi_time() {
+        return regi_time;
     }
 
-    public void setReg_date(Date reg_date) {
-        this.reg_date = reg_date;
+    public void setRegi_time(Date regi_time) {
+        this.regi_time = regi_time;
     }
 }

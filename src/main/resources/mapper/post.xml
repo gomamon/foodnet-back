@@ -6,7 +6,13 @@
 <mapper namespace="com.foodnet.springboot.dao.PostDao">
 
     <select id="getPost" resultType="com.foodnet.springboot.model.PostModel">
-        select * from post
+      select HEX(id), title, content, regi_time, upd_time from post
     </select>
+
+
+    <insert id="addPost">
+      insert into post(id, title, content)
+        values(UNHEX(REPLACE(UUID(), "-","")),#{title}, #{content});
+    </insert>
 
 </mapper>
